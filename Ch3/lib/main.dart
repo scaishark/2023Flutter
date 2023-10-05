@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Test/HelloPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Text(
-        'Hello World',
-        style: TextStyle(fontSize: 100),
-      ),
+      title: "Flutter Demo",
+      home: HelloPage(title: '하이 월드',)
     );
   }
 }
